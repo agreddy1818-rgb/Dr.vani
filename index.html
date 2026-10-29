@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vani Children's Clinic | Dr. Sreevani Reddy</title>
+
+    <meta name="description" content="Vani Children's Clinic in Nandyal, Andhra Pradesh. Pediatric consultation, newborn care, vaccination, nutrition counselling and child healthcare with Dr. Sreevani Reddy.">
+
+    <style>
+        /* GENERAL STYLES */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #243568;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading span {
+            color: #f47729;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .section-heading h2 {
+            font-size: 36px;
+            margin: 10px 0;
+            color: #243568;
+        }
+
+        .section-heading p {
+            color: #68718a;
+        }
+
+        .orange {
+            color: #f47729;
+        }
+
+        .button {
+            display: inline-block;
+            background: #f47729;
+            color: white;
+            padding: 13px 23px;
+            border-radius: 7px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #d95e17;
+            transform: translateY(-2px);
+        }
+
+        .button-outline {
+            display: inline-block;
+            padding: 12px 22px;
+            border: 2px solid #243568;
+            color: #243568;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .button-outline:hover {
+            background: #243568;
+            color: white;
+        }
+
+        /* HEADER */
+
+        header {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar {
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            color: #243568;
+            font-size: 23px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .brand small {
+            display: block;
+            font-size: 11px;
+            color: #f47729;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        nav a {
+            color: #243568;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f47729;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 25px;
+            padding: 5px 12px;
+            border: none;
+            background: #243568;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            background: linear-gradient(120deg, #fff5eb, #edf2ff);
+            padding: 85px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 55px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 7px 15px;
+            background: #ffe5d3;
+            color: #c95616;
+            border-radius: 25px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            line-height: 1.2;
+            margin: 22px 0;
+            color: #243568;
+        }
+
+        .hero p {
+            color: #65708b;
+            font-size: 16px;
+            margin-bottom: 28px;
+        }
+
+        .hero-image-box {
+            background: white;
+            padding: 14px;
+            border-radius: 22px;
+            box-shadow: 0 15px 45px rgba(36, 53, 104, 0.14);
+        }
+
+        .hero-image-box img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            object-position: center 25%;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .hero-caption {
+            padding: 18px 10px 8px;
+            text-align: center;
+        }
+
+        .hero-caption h2 {
+            font-size: 24px;
+        }
+
+        .hero-caption p {
+            margin: 3px 0 0;
+            color: #f47729;
+            font-weight: bold;
+        }
+
+        /* QUICK FEATURES */
+
+        .features {
+            padding: 35px 0;
+            background: white;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 22px 12px;
+            background: #f5f7ff;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            font-size: 34px;
+        }
+
+        .feature h3 {
+            font-size: 16px;
+            margin: 7px 0;
+        }
+
+        .feature p {
+            font-size: 13px;
+            color: #68718a;
+        }
+
+        /* ABOUT DOCTOR */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .doctor-photo {
+            background: linear-gradient(145deg, #e9efff, #fff0e4);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .doctor-photo img {
+            width: 100%;
+            height: 470px;
+            object-fit: cover;
+            object-position: center 20%;
+            border-radius: 13px;
+            display: block;
+        }
+
+        .doctor-photo h3 {
+            margin-top: 15px;
+            font-size: 23px;
+        }
+
+        .doctor-photo p {
+            color: #f47729;
+            font-weight: bold;
+        }
+
+        .about-text h2 {
+            font-size: 35px;
+            margin: 12px 0 20px;
+        }
+
+        .about-text > p {
+            color: #68718a;
+            margin-bottom: 18px;
+        }
+
+        .experience-box {
+            display: inline-block;
+            background: #fff0e4;
+            color: #c95616;
+            padding: 12px 18px;
+            border-radius: 9px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .qualification {
+            background: #f5f7ff;
+            border-left: 4px solid #f47729;
+            padding: 15px 18px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .qualification h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .qualification p {
+            color: #68718a;
+            font-size: 14px;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: #f5f7ff;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 13px;
+            border: 1px solid #e7eaf5;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(36, 53, 104, 0.10);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #fff0e4;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+            margin-bottom: 17px;
+        }
+
+        .service-card h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #68718a;
+            font-size: 13px;
+        }
+
+        /* NEWBORN CARE */
+
+        .newborn {
+            background: #243568;
+            color: white;
+        }
+
+        .newborn-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .newborn h2 {
+            font-size: 38px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .newborn h2 span {
+            color: #ffb477;
+        }
+
+        .newborn p {
+            color: #e1e7ff;
+            margin-bottom: 22px;
+        }
+
+        .newborn-list {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .newborn-item {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .newborn-item:last-child {
+            border-bottom: none;
+        }
+
+        .newborn-item h3 {
+            color: #ffb477;
+            font-size: 17px;
+        }
+
+        .newborn-item p {
+            margin: 5px 0 0;
+            font-size: 13px;
+        }
+
+        /* CLINIC HOURS */
+
+        .hours {
+            background: #fff8f2;
+        }
+
+        .hours-card {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(36, 53, 104, 0.07);
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #edf0f5;
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .hours-row strong {
+            color: #243568;
+        }
+
+        .hours-row span {
+            text-align: right;
+            color: #68718a;
+        }
+
+        .hours-note {
+            text-align: center;
+            margin-top: 20px;
+            color: #68718a;
+            font-size: 13px;
+        }
+
+        /* APPOINTMENT */
+
+        .appointment-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .appointment-info h2 {
+            font-size: 35px;
+            margin: 15px 0;
+        }
+
+        .appointment-info > p {
+            color: #68718a;
+            margin-bottom: 20px;
+        }
+
+        .contact-card {
+            background: #f5f7ff;
+            padding: 22px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+
+        .contact-item {
+            margin-bottom: 18px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item h3 {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            font-size: 14px;
+            color: #68718a;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a:hover {
+            color: #f47729;
+        }
+
+        .appointment-form {
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 35px rgba(36, 53, 104, 0.10);
+            border: 1px solid #edf0f5;
+        }
+
+        .appointment-form h3 {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .appointment-form > p {
+            font-size: 13px;
+            color: #68718a;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #dce1ed;
+            border-radius: 7px;
+            font-size: 14px;
+            font-family: inherit;
+            background: #fcfcff;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: 2px solid #dce6ff;
+            border-color: #5369b0;
+        }
+
+        .appointment-form button {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .form-note {
+            font-size: 12px;
+            color: #68718a;
+            margin-top: 15px;
+        }
+
+        /* LOCATION */
+
+        .location {
+            background: #f5f7ff;
+        }
+
+        .location-card {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        .location-card .location-icon {
+            font-size: 48px;
+        }
+
+        .location-card h3 {
+            margin: 12px 0;
+            font-size: 23px;
+        }
+
+        .location-card p {
+            color: #68718a;
+            margin-bottom: 22px;
+        }
+
+        /* FAQ */
+
+        .faq-item {
+            background: #f5f7ff;
+            padding: 20px;
+            margin-bottom: 13px;
+            border-radius: 10px;
+        }
+
+        .faq-item summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #243568;
+        }
+
+        .faq-item p {
+            margin-top: 12px;
+            color: #68718a;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #19244f;
+            color: white;
+            padding: 45px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 35px;
+            margin-bottom: 30px;
+        }
+
+        footer h3 {
+            margin-bottom: 12px;
+        }
+
+        footer p,
+        footer a {
+            color: #dce3ff;
+            font-size: 13px;
+        }
+
+        footer a {
+            display: block;
+            margin: 7px 0;
+        }
+
+        footer a:hover {
+            color: #ffb477;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            padding-top: 18px;
+            font-size: 12px;
+            color: #dce3ff;
+        }
+
+        /* MOBILE DESIGN */
+
+        @media (max-width: 950px) {
+            .hero-grid,
+            .about-grid,
+            .newborn-grid,
+            .appointment-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-image-box {
+                max-width: 600px;
+                margin: auto;
+            }
+
+            .doctor-photo {
+                max-width: 600px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                flex-wrap: wrap;
+                padding: 15px 0;
+            }
+
+            .brand {
+                font-size: 19px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 12px 5px;
+                border-top: 1px solid #eeeeee;
+            }
+
+            .hero {
+                padding: 50px 0;
+            }
+
+            .hero h1 {
+                font-size: 37px;
+            }
+
+            .hero-image-box img {
+                height: 350px;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+
+            .section-heading h2,
+            .about-text h2,
+            .newborn h2,
+            .appointment-info h2 {
+                font-size: 29px;
+            }
+
+            .service-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-outline {
+                margin: 12px 0 0;
+            }
+
+            .appointment-form,
+            .hours-card,
+            .location-card {
+                padding: 22px;
+            }
+
+            .hours-row {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .hours-row span {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container navbar">
+
+            <a href="#home" class="brand">
+                Vani Children's Clinic
+                <small>TRUSTED PEDIATRIC CARE</small>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">Our Doctor</a>
+                <a href="#services">Services</a>
+                <a href="#hours">Timings</a>
+                <a href="#location">Location</a>
+                <a href="#appointment" class="button">Appointment</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+
+            <div>
+                <span class="hero-label">
+                    CARING FOR LITTLE ONES
+                </span>
+
+                <h1>
+                    A healthier start
+                    for a <span class="orange">brighter future.</span>
+                </h1>
+
+                <p>
+                    Welcome to Vani Children's Clinic in Nandyal.
+                    Our aim is to support children's health and
+                    development while helping parents make informed
+                    decisions about their child's healthcare.
+                </p>
+
+                <a href="#appointment" class="button">
+                    Request an Appointment →
+                </a>
+
+                <a href="#services" class="button-outline">
+                    Explore Services
+                </a>
+            </div>
+
+            <div class="hero-image-box">
+                <img
+                    src="doctor.jpg"
+                    alt="Dr. Sreevani Reddy at Vani Children's Clinic"
+                    onerror="this.style.display='none'; document.getElementById('photoMessage').style.display='block';">
+
+                <div id="photoMessage"
+                     style="display:none; padding:60px 10px; text-align:center;">
+                    <div style="font-size:65px;">👩‍⚕️</div>
+                    <h3>Dr. Sreevani Reddy</h3>
+                    <p>Please add your doctor's photograph as doctor.jpg.</p>
+                </div>
+
+                <div class="hero-caption">
+                    <h2>Dr. Sreevani Reddy</h2>
+                    <p>Pediatrician</p>
+                    <p style="color:#68718a; font-weight:normal;">
+                        Vani Children's Clinic
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- HIGHLIGHTS -->
+
+    <section class="features">
+        <div class="container feature-grid">
+
+            <div class="feature">
+                <div class="feature-icon">🩺</div>
+                <h3>Pediatric Consultation</h3>
+                <p>Healthcare for children</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">👶</div>
+                <h3>Newborn Care</h3>
+                <p>Guidance for new parents</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💉</div>
+                <h3>Vaccination</h3>
+                <p>Childhood immunisation</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🌱</div>
+                <h3>Healthy Development</h3>
+                <p>Growth and nutrition support</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT DOCTOR -->
+
+    <section class="section" id="about">
+        <div class="container about-grid">
+
+            <div class="doctor-photo">
+                <img
+                    src="doctor.jpg"
+                    alt="Dr. Sreevani Reddy, pediatrician"
+                    onerror="this.style.display='none';">
+
+                <h3>Dr. Sreevani Reddy</h3>
+                <p>Pediatrician & Neonatologist</p>
+            </div>
+
+            <div class="about-text">
+
+                <span class="orange">
+                    ABOUT OUR DOCTOR
+                </span>
+
+                <h2>
+                    Your child's health is
+                    <span class="orange">our priority.</span>
+                </h2>
+
+                <div class="experience-box">
+                    ⭐ 7+ Years of Experience
+                </div>
+
+                <p>
+                    Dr. Sreevani Reddy provides pediatric care
+                    with a focus on children's health, growth,
+                    development and newborn care.
+                </p>
+
+                <div class="qualification">
+                    <h3>🎓 Medical Qualifications</h3>
+                    <p>
+                        MBBS, MD Pediatrics
+                        (Gold Medalist – Osmania, Hyderabad).
+                    </p>
+                </div>
+
+                <div class="qualification">
+                    <h3>👶 Fellowship</h3>
+                    <p>
+                        Fellowship in Neonatology (FNNF).
+                    </p>
+                </div>
+
+                <div class="qualification">
+                    <h3>🏥 Previous Experience</h3>
+                    <p>
+                        Former Senior Resident at Gandhi Hospital,
+                        Hyderabad, and former Consultant at Medicover
+                        Woman and Child Hospitals, Hyderabad.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MEDICAL SERVICES -->
+
+    <section class="section services" id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>OUR SERVICES</span>
+                <h2>Comprehensive <span class="orange">Child Care</span></h2>
+                <p>
+                    Supporting children's health at every stage.
+                </p>
+            </div>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🩺</div>
+                    <h3>General Pediatric Consultation</h3>
+                    <p>
+                        Consultation and assessment for children's
+                        general health concerns.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">❤️</div>
+                    <h3>Childhood Illness</h3>
+                    <p>
+                        Professional assessment and guidance
+                        for childhood illnesses.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🥗</div>
+                    <h3>Nutrition Counselling</h3>
+                    <p>
+                        Guidance on nutrition and healthy
+                        eating habits for children.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Growth & Development</h3>
+                    <p>
+                        Monitoring children's growth and
+                        developmental milestones.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💉</div>
+                    <h3>Vaccination</h3>
+                    <p>
+                        Guidance regarding childhood vaccination
+                        and immunisation schedules.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Newborn Care</h3>
+                    <p>
+                        Healthcare guidance for newborn babies
+                        and their parents.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">☀️</div>
+                    <h3>Phototherapy</h3>
+                    <p>
+                        Information about newborn phototherapy
+                        services, subject to clinic availability.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤱</div>
+                    <h3>Breastfeeding Support</h3>
+                    <p>
+                        Breastfeeding guidance and support
+                        for parents.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NEWBORN CARE -->
+
+    <section class="section newborn" id="newborn">
+        <div class="container newborn-grid">
+
+            <div>
+                <h2>
+                    Little beginnings.
+                    <span>Big possibilities.</span>
+                </h2>
+
+                <p>
+                    Welcoming a newborn brings happiness and
+                    many questions. Professional guidance can
+                    help parents understand newborn care,
+                    feeding and healthy development.
+                </p>
+
+                <a href="#appointment" class="button">
+                    Request a Visit →
+                </a>
+            </div>
+
+            <div class="newborn-list">
+
+                <div class="newborn-item">
+                    <h3>01. Newborn Wellness</h3>
+                    <p>
+                        Guidance on routine newborn care
+                        and health concerns.
+                    </p>
+                </div>
+
+                <div class="newborn-item">
+                    <h3>02. Feeding Guidance</h3>
+                    <p>
+                        Support with breastfeeding
+                        and infant nutrition.
+                    </p>
+                </div>
+
+                <div class="newborn-item">
+                    <h3>03. Growth Monitoring</h3>
+                    <p>
+                        Guidance about growth and
+                        developmental milestones.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CLINIC TIMINGS -->
+
+    <section class="section hours" id="hours">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>PLAN YOUR VISIT</span>
+                <h2>Clinic <span class="orange">Timings</span></h2>
+                <p>Visit during the clinic's scheduled hours.</p>
+            </div>
+
+            <div class="hours-card">
+
+                <div class="hours-row">
+                    <strong>Monday – Saturday</strong>
+                    <span>10:00 AM – 2:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Monday – Saturday</strong>
+                    <span>6:00 PM – 9:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <strong>Sunday</strong>
+                    <span>10:00 AM – 2:00 PM</span>
+                </div>
+
+                <p class="hours-note">
+                    Timings may change on holidays.
+                    Please contact the clinic before visiting.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- APPOINTMENT AND CONTACT -->
+
+    <section class="section" id="appointment">
+        <div class="container appointment-grid">
+
+            <div class="appointment-info">
+
+                <span class="orange">GET IN TOUCH</span>
+
+                <h2>
+                    Request an
+                    <span class="orange">Appointment.</span>
+                </h2>
+
+                <p>
+                    Contact Vani Children's Clinic to enquire
+                    about appointments and available services.
+                </p>
+
+                <div class="contact-card">
+
+                    <div class="contact-item">
+                        <h3>📞 Phone / WhatsApp</h3>
+                        <a href="tel:+917680876581">
+                            7680876581
+                        </a>
+                        <br>
+                        <a
+                            href="https://wa.me/917680876581"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Message on WhatsApp →
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <a href="mailto:vanisreereddy.g@gmail.com">
+                            vanisreereddy.g@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📍 Clinic Address</h3>
+                        <p>
+                            Old Srinivasa Junior College Building,
+                            beside Indoor Municipal Stadium,
+                            Padmavati Nagar, Nandyal,
+                            Andhra Pradesh, India.
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🕒 Working Hours</h3>
+                        <p>
+                            Monday–Saturday: 10 AM–2 PM
+                            and 6 PM–9 PM.
+                        </p>
+                        <p>
+                            Sunday: 10 AM–2 PM.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- APPOINTMENT FORM -->
+
+            <form class="appointment-form" id="appointmentForm">
+
+                <h3>Appointment Enquiry</h3>
+
+                <p>
+                    Complete the form to prepare a WhatsApp message
+                    for the clinic.
+                </p>
+
+                <div class="form-group">
+                    <label for="parentName">
+                        Parent / Guardian Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="parentName"
+                        maxlength="80"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="childAge">Child's Age</label>
+
+                    <input
+                        type="text"
+                        id="childAge"
+                        maxlength="40"
+                        placeholder="Example: 2 months"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitDate">
+                        Preferred Appointment Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="visitDate"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitTime">
+                        Preferred Time
+                    </label>
+
+                    <select id="visitTime" required>
+                        <option value="">Select a time</option>
+                        <option>Morning: 10 AM – 2 PM</option>
+                        <option>Evening: 6 PM – 9 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitReason">
+                        Service Required
+                    </label>
+
+                    <select id="visitReason" required>
+                        <option value="">Select a service</option>
+                        <option>General Pediatric Consultation</option>
+                        <option>Childhood Illness</option>
+                        <option>Vaccination</option>
+                        <option>Newborn Care</option>
+                        <option>Nutrition Counselling</option>
+                        <option>Growth and Development</option>
+                        <option>Phototherapy Enquiry</option>
+                        <option>Breastfeeding Support</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">
+                    Continue to WhatsApp →
+                </button>
+
+                <p class="form-note">
+                    This form opens WhatsApp with a prepared
+                    appointment enquiry. The clinic must confirm
+                    your appointment. Please do not include
+                    sensitive medical information.
+                </p>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- LOCATION -->
+
+    <section class="section location" id="location">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>FIND US</span>
+                <h2>Visit Our <span class="orange">Clinic</span></h2>
+            </div>
+
+            <div class="location-card">
+
+                <div class="location-icon">📍</div>
+
+                <h3>Vani Children's Clinic</h3>
+
+                <p>
+                    Old Srinivasa Junior College Building,
+                    beside Indoor Municipal Stadium,
+                    Padmavati Nagar, Nandyal,
+                    Andhra Pradesh, India.
+                </p>
+
+                <a
+                    href="https://share.google/KY9IVDfD57Vjg9Y6a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button">
+                    Open Google Maps →
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>HELPFUL INFORMATION</span>
+                <h2>Frequently Asked <span class="orange">Questions</span></h2>
+            </div>
+
+            <details class="faq-item">
+                <summary>Where is Vani Children's Clinic located?</summary>
+                <p>
+                    The clinic is located in Padmavati Nagar,
+                    Nandyal, Andhra Pradesh, beside Indoor
+                    Municipal Stadium, in the Old Srinivasa
+                    Junior College Building.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Who is the doctor at the clinic?</summary>
+                <p>
+                    The website presents Dr. Sreevani Reddy,
+                    a pediatrician and neonatologist.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What are the clinic's working hours?</summary>
+                <p>
+                    Monday to Saturday: 10 AM to 2 PM and
+                    6 PM to 9 PM. Sunday: 10 AM to 2 PM.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How can I enquire about an appointment?</summary>
+                <p>
+                    You can call 7680876581 or use the
+                    appointment enquiry form on this website.
+                    The clinic must confirm the appointment.
+                </p>
+            </details>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <h3>Vani Children's Clinic</h3>
+
+                    <p>
+                        Trusted Pediatric Care
+                    </p>
+
+                    <p>
+                        Dr. Sreevani Reddy
+                    </p>
+
+                    <p>
+                        Nandyal, Andhra Pradesh, India.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+
+                    <a href="#home">Home</a>
+                    <a href="#about">About Doctor</a>
+                    <a href="#services">Services</a>
+                    <a href="#hours">Clinic Timings</a>
+                    <a href="#location">Location</a>
+                </div>
+
+                <div>
+                    <h3>Contact Us</h3>
+
+                    <a href="tel:+917680876581">
+                        7680876581
+                    </a>
+
+                    <a href="mailto:vanisreereddy.g@gmail.com">
+                        Email the Clinic
+                    </a>
+
+                    <a
+                        href="https://share.google/KY9IVDfD57Vjg9Y6a"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Google Maps
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © <span id="year"></span>
+                Vani Children's Clinic. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        // MOBILE NAVIGATION
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navigation = document.getElementById("navigation");
+
+        menuToggle.addEventListener("click", function () {
+            navigation.classList.toggle("active");
+
+            const isOpen = navigation.classList.contains("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            menuToggle.textContent = isOpen ? "×" : "☰";
+        });
+
+        document.querySelectorAll("#navigation a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navigation.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+
+        // AUTOMATIC COPYRIGHT YEAR
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        // PREVENT PAST APPOINTMENT DATES
+
+        const dateInput = document.getElementById("visitDate");
+
+        const now = new Date();
+
+        const today = new Date(
+            now.getTime() - now.getTimezoneOffset() * 60000
+        ).toISOString().split("T")[0];
+
+        dateInput.min = today;
+
+
+        // APPOINTMENT ENQUIRY THROUGH WHATSAPP
+
+        document.getElementById("appointmentForm")
+            .addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const parentName = document
+                    .getElementById("parentName")
+                    .value.trim();
+
+                const childAge = document
+                    .getElementById("childAge")
+                    .value.trim();
+
+                const visitDate = document
+                    .getElementById("visitDate")
+                    .value;
+
+                const visitTime = document
+                    .getElementById("visitTime")
+                    .value;
+
+                const visitReason = document
+                    .getElementById("visitReason")
+                    .value;
+
+                if (
+                    !parentName ||
+                    !childAge ||
+                    !visitDate ||
+                    !visitTime ||
+                    !visitReason
+                ) {
+                    alert("Please complete all fields.");
+                    return;
+                }
+
+                const formattedDate = new Date(
+                    visitDate + "T00:00:00"
+                ).toLocaleDateString("en-IN", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                });
+
+                const message =
+                    "Hello Vani Children's Clinic,\n\n" +
+                    "I would like to enquire about an appointment.\n\n" +
+                    "Doctor: Dr. Sreevani Reddy\n" +
+                    "Parent/Guardian: " + parentName + "\n" +
+                    "Child's Age: " + childAge + "\n" +
+                    "Preferred Date: " + formattedDate + "\n" +
+                    "Preferred Time: " + visitTime + "\n" +
+                    "Service: " + visitReason + "\n\n" +
+                    "Please confirm the appointment availability.\n\n" +
+                    "Thank you.";
+
+                const whatsappURL =
+                    "https://wa.me/917680876581?text=" +
+                    encodeURIComponent(message);
+
+                window.open(
+                    whatsappURL,
+                    "_blank",
+                    "noopener,noreferrer"
+                );
+            });
+    </script>
+
+</body>
+</html>
